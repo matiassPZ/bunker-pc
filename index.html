@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bunker PC - Asistente inteligente para ensamblaje de PC personalizada, PCs pre-ensambladas y catálogo de laptops.">
+    <meta name="theme-color" content="#050505">
+    <title>Configurador de PC Custom | Bunker PC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Bunker PC</h1>
+        <p>Expertos en ensamblaje y asesoría tecnológica.</p>
+    </header>
+
+    <section id="institucional" class="seccion-institucional">
+        <div class="intro-empresa">
+            <h2>¿Qué es Bunker PC?</h2>
+            <p>Somos una plataforma y tienda especializada en el diseño, ensamblaje y optimización de equipos
+                informáticos de alto rendimiento. En Bunker PC no solo vendemos computadoras; brindamos asesoría técnica
+                personalizada para garantizar que cada componente seleccionado funcione en perfecta armonía, entregando
+                la máxima potencia para tus necesidades, ya sean profesionales, empresariales o de gaming competitivo.
+            </p>
+        </div>
+
+        <div class="contenedor-video-placeholder">
+            <div class="video-placeholder">
+                <h3>Espacio reservado para video introductorio</h3>
+                <p>Aquí irá el video que grabarán próximamente.</p>
+            </div>
+        </div>
+
+        <div class="grid-institucional">
+            <div class="tarjeta-info">
+                <h3>Nuestra Misión</h3>
+                <p>Proveer soluciones tecnológicas a medida mediante componentes de la más alta calidad y un
+                    asesoramiento experto, garantizando equipos eficientes, duraderos y perfectamente adaptados a los
+                    requerimientos de nuestros clientes.</p>
+            </div>
+            <div class="tarjeta-info">
+                <h3>Nuestra Visión</h3>
+                <p>Consolidarnos como la principal plataforma y empresa de referencia a nivel nacional en ensamblaje de
+                    hardware custom, destacando por nuestra innovación técnica, confiabilidad y excelencia en el
+                    servicio al cliente.</p>
+            </div>
+        </div>
+
+        <div class="grid-institucional">
+            <div class="tarjeta-info">
+                <h3>Hardware y Software</h3>
+                <p>El <strong>Hardware</strong> es el cuerpo físico de tu equipo (procesador, tarjeta gráfica, memoria
+                    RAM), la fuerza bruta. El <strong>Software</strong> es la mente (sistema operativo, programas) que
+                    le da instrucciones. En Bunker PC aseguramos una simbiosis perfecta entre ambos para evitar cuellos
+                    de botella y maximizar el rendimiento.</p>
+            </div>
+            <div class="tarjeta-info">
+                <h3>Enfoque Empresarial y Técnico</h3>
+                <p>Nuestro enfoque técnico se basa en la precisión computacional y la compatibilidad estricta. A nivel
+                    empresarial, nos enfocamos en ofrecer una experiencia de usuario inmersiva y educativa,
+                    democratizando el conocimiento del hardware para que cada cliente tome decisiones informadas y
+                    seguras.</p>
+            </div>
+        </div>
+
+        <div class="grid-institucional">
+            <div class="tarjeta-info">
+                <h3>El Reto de las Compatibilidades</h3>
+                <p>En el mundo del hardware, no todas las piezas encajan entre sí. Los procesadores <strong>AMD</strong>
+                    utilizan zócalos o "sockets" específicos como <strong>AM4</strong> o el más reciente
+                    <strong>AM5</strong>. Por su parte, <strong>Intel</strong> utiliza formatos como el <strong>LGA
+                        1700</strong> o <strong>LGA 1200</strong>. Elegir una placa base incompatible con tu procesador
+                    o el tipo incorrecto de memoria (DDR4 vs DDR5) es un error común que puede estropear tu inversión.
+                </p>
+            </div>
+            <div class="tarjeta-info">
+                <h3>Nuestro Sistema Inteligente</h3>
+                <p>¡Aquí es donde brilla nuestra plataforma! Bunker PC está equipado con un <strong>Asistente de
+                        Ensamblaje Dinámico</strong> que actúa como tu experto personal. Si seleccionas un procesador de
+                    socket AM5, nuestro algoritmo filtrará y ocultará automáticamente las placas base de Intel y las
+                    memorias DDR4, mostrando únicamente componentes <strong>100% compatibles</strong>. Armar tu PC
+                    soñada nunca fue tan seguro.</p>
+            </div>
+        </div>
+
+        <div class="cta-tienda-contenedor">
+            <button id="btn-ir-tienda" class="btn-gigante btn-ir-tienda">
+                <h3 class="sin-margen">Ingresar al Catálogo de Productos</h3>
+            </button>
+        </div>
+    </section>
+
+    <div id="contenedor-tienda" style="display: none;">
+        <main class="contenedor-principal">
+
+            <div id="pantalla-bienvenida" class="menu-bienvenida">
+                <h2>¿Qué hardware estás buscando hoy?</h2>
+                <p>Selecciona una opción para comenzar tu experiencia en Bunker PC.</p>
+
+                <div class="grid-botones-inicio">
+                    <button id="btn-menu-ensamblar" class="btn-gigante">
+                        <h3>Ensamblar PC</h3>
+                        <span>Arma tu equipo pieza por pieza a tu medida.</span>
+                    </button>
+
+                    <button id="btn-menu-preensambladas" class="btn-gigante">
+                        <h3>PC Pre-ensambladas</h3>
+                        <span>Equipos listos según tu presupuesto y uso.</span>
+                    </button>
+
+                    <button id="btn-menu-laptops" class="btn-gigante">
+                        <h3>Laptops</h3>
+                        <span>Equipos portátiles para gaming y trabajo.</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- SECCIÓN PCS PRE-ENSAMBLADAS -->
+            <section id="panel-preensambladas" class="panel-seleccion panel-catalogo-ancho" style="display: none;">
+                <div class="panel-encabezado-fila">
+                    <button id="btn-volver-preensambladas" class="btn-volver-panel">Volver al Menú</button>
+                    <h2 class="panel-titulo-destacado">PCs Pre-ensambladas & Combos de Periféricos</h2>
+                    <span id="conteo-preensambladas" class="conteo-catalogo-badge"></span>
+                </div>
+
+                <div class="filtros-gama-contenedor">
+                    <button class="btn-filtro-gama activo" data-gama="todas">Todas las Gamas (9 PCs)</button>
+                    <button class="btn-filtro-gama" data-gama="baja">Gama Baja (3 PCs)</button>
+                    <button class="btn-filtro-gama" data-gama="media">Gama Media (3 PCs)</button>
+                    <button class="btn-filtro-gama" data-gama="alta">Gama Alta (3 PCs)</button>
+                </div>
+
+                <input type="text" id="buscador-preensambladas" placeholder="Buscar PC por nombre, procesador (Ryzen, i5, i9), gráfica (RTX, RX), o combo...">
+
+                <div id="contenedor-preensambladas" class="grid-tarjetas-preensambladas"></div>
+            </section>
+
+            <!-- SECCIÓN LAPTOPS -->
+            <section id="panel-laptops" class="panel-seleccion panel-catalogo-ancho" style="display: none;">
+                <div class="panel-encabezado-fila">
+                    <button id="btn-volver-laptops" class="btn-volver-panel">Volver al Menú</button>
+                    <h2 class="panel-titulo-destacado">Catálogo de Laptops</h2>
+                    <span id="conteo-laptops" class="conteo-catalogo-badge"></span>
+                </div>
+
+                <input type="text" id="buscador-laptops" placeholder="Buscar laptop por marca, modelo, procesador (i7, Ryzen), gráfica (RTX)...">
+
+                <div id="contenedor-laptops" class="grid-tarjetas"></div>
+            </section>
+
+            <!-- SECCIÓN ASISTENTE DE ENSAMBLAJE -->
+            <section class="panel-seleccion" id="panel-asistente">
+                <div class="panel-encabezado-fila">
+                    <button id="btn-volver-asistente" class="btn-volver-panel btn-volver-asistente">Volver al Menú</button>
+                    <h2 id="titulo-paso" class="sin-margen">Paso 1: Elige tu Procesador</h2>
+                    <span class="espaciador-balance"></span>
+                </div>
+
+                <div id="contenedor-calculo-fuente" style="display: none;"></div>
+
+                <input type="text" id="buscador-tarjetas" placeholder="Buscar pieza...">
+
+                <div id="contenedor-tarjetas" class="grid-tarjetas">
+                    <p class="texto-cargando-componentes">Cargando componentes...</p>
+                </div>
+
+                <div class="contenedor-botones-paso">
+                    <button id="btn-atras" style="display: none;">Paso Anterior</button>
+                    <button id="btn-omitir" style="display: none;">Omitir este paso</button>
+                    <button id="btn-siguiente" disabled>Selecciona una pieza para continuar</button>
+                </div>
+            </section>
+
+            <!-- PANEL RESUMEN Y CALCULADORA -->
+            <section class="panel-resumen" id="panel-resumen">
+                <h2>Tu Configuración</h2>
+                <ul id="lista-resumen">
+                    <li class="placeholder">Aún no has seleccionado componentes.</li>
+                </ul>
+                <div id="visualizador-imagen">
+                    <p id="texto-visualizador">Selecciona un componente para ver su imagen</p>
+                    <img id="imagen-componente" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="Componente seleccionado" style="display: none;">
+                </div>
+
+                <div id="resumen-potencia-contenedor" style="display: none;"></div>
+
+                <div class="total-precio">
+                    <h3>Total Estimado: $<span id="precio-final">0</span></h3>
+                </div>
+
+                <button id="btn-confirmar" disabled>Confirmar Ensamblaje</button>
+                <button id="btn-reiniciar">Reiniciar Todo</button>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="main.js" defer></script>
+</body>
+
+</html>
